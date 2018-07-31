@@ -50,6 +50,22 @@ const fourIsNotHighlighted = () => {
   starFour.className = '';
 }
 
+const fiveIsHighlighted = () => {
+  starOne.className = 'highlighted';
+  starTwo.className = 'highlighted';
+  starThree.className = 'highlighted';
+  starFour.className = 'highlighted';
+  starFive.className = 'highlighted';
+}
+
+const fiveIsNotHighlighted = () => {
+  starOne.className = '';
+  starTwo.className = '';
+  starThree.className = '';
+  starFour.className = '';
+  starFive.className = '';
+}
+
 starOne.addEventListener('mouseenter', oneIsHighlighted);
 starOne.addEventListener('mouseleave', oneIsNotHighlighted);
 
@@ -61,3 +77,6 @@ starThree.addEventListener('mouseleave', threeIsNotHighlighted);
 
 starFour.addEventListener('mouseenter', fourIsHighlighted);
 starFour.addEventListener('mouseleave', fourIsNotHighlighted);
+
+starFive.addEventListener('mouseenter', fiveIsHighlighted);
+starFive.addEventListener('mouseleave', fiveIsNotHighlighted);
