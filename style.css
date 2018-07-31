@@ -1,0 +1,15 @@
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  color: gray;
+  margin-right: 2em;
+  font-size: 5em;
+  cursor: pointer;
+}
+
+.highlighted {
+  color: red;
+}
