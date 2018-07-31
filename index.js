@@ -10,7 +10,7 @@ const oneIsHighlighted = () => {
   starOne.className = 'highlighted';
 }
 
-const OneIsNotHighlighted = () => {
+const oneIsNotHighlighted = () => {
   starOne.className = '';
 }
 
@@ -24,8 +24,23 @@ const twoIsNotHighlighted = () => {
   starTwo.className = '';
 }
 
+const threeIsHighlighted = () => {
+  starOne.className = 'highlighted';
+  starTwo.className = 'highlighted';
+  starThree.className = 'highlighted';
+}
+
+const threeIsNotHighlighted = () => {
+  starOne.className = '';
+  starTwo.className = '';
+  starThree.className = '';
+}
+
 starOne.addEventListener('mouseenter', oneIsHighlighted);
-starOne.addEventListener('mouseleave', OneIsNotHighlighted);
+starOne.addEventListener('mouseleave', oneIsNotHighlighted);
 
 starTwo.addEventListener('mouseenter', twoIsHighlighted);
 starTwo.addEventListener('mouseleave', twoIsNotHighlighted);
+
+starThree.addEventListener('mouseenter', threeIsHighlighted);
+starThree.addEventListener('mouseleave', threeIsNotHighlighted);
